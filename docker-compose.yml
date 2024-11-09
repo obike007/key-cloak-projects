@@ -36,7 +36,7 @@ services:
       - /srv/gitlab-runner/config:/etc/gitlab-runner
       - /var/run/docker.sock:/var/run/docker.sock:rw
   keycloak:
-    image: keycloak:community
+    image: keycloak:latest
     depends_on:
       - db
       - gitlab
